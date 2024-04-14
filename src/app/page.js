@@ -28,8 +28,6 @@ export default function Home() {
   }, []);
 
   const handleCreategeo = () => {
-    console.log("laksdf");
-
     axios
       .post(CREATE_GEO_URL, { geodata: geoData })
       .then((res) => {
